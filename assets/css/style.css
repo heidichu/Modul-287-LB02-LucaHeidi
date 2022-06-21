@@ -4,11 +4,6 @@
     font-family: 'Nunito', sans-serif;
 }
 
-img {
-    max-height: 600px;
-    max-width: 500px;
-}
-
 a {
     text-decoration: none!important;
     color: black!important;
@@ -24,6 +19,10 @@ p {
 
 body {
     background-color: #e3f7fb;
+}
+
+img {
+  object-fit: cover;
 }
 
 /* Navbar  */
@@ -80,11 +79,11 @@ body {
   }
 
   .px-3 {
-    margin: 0px 100px;
+    margin: 20px 100px;
   }
 }
 
-@media (min-width:100px) {
+@media (min-width:1000px) {
     .px-3 {
         margin: 0px 250px;
     }
@@ -147,7 +146,10 @@ padding: 50px;
     object-fit: cover;
     border-radius: 20px;
     margin-bottom: 20px;
+    max-height: 600px;
+    max-width: 500px;
 }
+
 
 .btn-light {
     background-color: #8de9fb!important;
@@ -236,5 +238,12 @@ body {
     .featurette-heading {
       margin-top: 7rem;
     }
+  }
+  
+
+  /* Heidi  */
+  .carousel-item {
+    transition: transform .3s ease-in-out!important;
+    border: solid 5px #093a79;
   }
   
