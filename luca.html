@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg container">
           <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand" href="#"><img src="assets/img/LOGO.svg" alt="" width="50px" height="50px"> Luca & Heidi</a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/LOGO.svg" alt="" width="50px" height="50px"> Luca & Heidi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <!-- Menü Icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Über uns
                   </a>
-                  <!-- Dropdown -->
+                  <!--Bootstrap Komponent Dropdown -->
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="luca.html">Luca Züger</a></li>
                     <li><a class="dropdown-item" href="heidi.html">Heidi Chu</a></li>
@@ -55,6 +55,7 @@
   <main>
 
     <!-- Main -->
+      <!-- Bootstrap-Komponent,Bildergallerie Carousel  -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -63,32 +64,29 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="mb-auto" height="mb-auto" src="assets/img/Kochen.jpg" alt="" width="500px" height="500px">
+          <img class="d-block w-100 h-100" src="assets/img/Kochen.jpg" alt="" width="500px" height="500px">
   
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Kochen</h1>
-              <p>Einer meiner Leidenschaften ist kochen. Ich koche seit ich 8 Jahre alt bin immer wieder mit meiner Familie und auch für meine Familie.</p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="mb-auto" height="mb-auto" src="assets/img/Gym.JPG" alt="" width="500px" height="500px">
+          <img class="d-block w-100 h-100" width="mb-auto" height="mb-auto" src="assets/img/Gym.JPG" alt="" width="500px" height="500px">
   
           <div class="container">
             <div class="carousel-caption">
               <h1>Gym</h1>
-              <p>Wenn ich mal nicht am Basketball spielen oder bei der Arbeit bin seht ihr mich im Gym.</p>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="mb-auto" height="mb-auto" src="assets/img/Arbeit.jpg" alt="" width="500px" height="500px">
+          <img class="d-block w-100 h-100" width="mb-auto" height="mb-auto" src="assets/img/Arbeit.jpg" alt="" width="500px" height="500px">
   
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>Arbeit</h1>
-              <p>Meine Arbeit die ich täglich mache gefällt mir sehr vorallem das designen.</p>
             </div>
           </div>
         </div>
@@ -103,36 +101,32 @@
       </button>
     </div>
   
-  
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-  
+  <!-- Bilder -->
     <div class="container marketing">
-  
-      <!-- Three columns of text below the carousel -->
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Musik<span class="text-muted">Artist</span></h2>
+        <p class="lead">Das sind meine favourite Artiste. </p>
+      </div>
       <div class="row">
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded" width="140" height="140" src="assets/img/Playboi_Carti.jpg" alt="">  
           <h2 class="fw-normal">Playboi carti</h2>
           <p> Einer meiner Lieblingsrapper ist Playboi carti. Er macht melodic-rap. Ich werde ihn am Openair Frauenfeld 2022 sehen. .</p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded" width="140" height="140" src="assets/img/Lil uzi vert.jpg" alt="">
   
           <h2 class="fw-normal">Lil Uzi Vert</h2>
           <p>Auch einer meiner Top-Lieblingsrapper oder sogar mein Lieblingsrapper ist lil Uzi Vert. Er macht ebefalls melodic-rap und kommt auch ans Openair Frauenfeld 2022.</p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded" width="140" height="140" src="assets/img/Juice wrld.jpg" alt="">  
           <h2 class="fw-normal">Juice Wrld</h2>
           <p>Juice Wrld ist einer der Rapper die ich am längsten kenne und auch immer schon gefeiert habe. Er ist leider vor 2 Jahren verstorben und produziert deswegen auch keine Musik mehr.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        </div>
+      </div>
   
-  
-      <!-- START THE FEATURETTES -->
-  
+       <!-- Media object -->
       <hr class="featurette-divider">
   
       <div class="row featurette">
@@ -141,7 +135,7 @@
           <p class="lead">Im August 2021 habe ich meine Lehre als Mediamatiker bei TBF + Partner angefangen.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/img/Beckenhof.jpg" alt="" width="500px" height="500px">
+          <img class="featurette-image img-fluid" src="assets/img/Beckenhof.jpg" alt="" width="500px" height="500px">
   
         </div>
       </div>
@@ -154,7 +148,7 @@
           <p class="lead">Meine Hobbies sind Hauptsächlich Basketball. Ich liebe diesen Sport und schaue auch regelmässig die NBA Spiele. Mein Lieblingsteam sind die Charlotte Hornets, da hier einer meiner Lieblingsspieler spielt und zwar LaMelo Ball. Er spiel als Position Point Guard und ist sehr gut im Dribeln. Ich selber spiele Basketball seit ich 12 Jahre alt bin.</p>
         </div>
         <div class="col-md-5">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/img/Basketball.jpg" alt="" width="500px" height="500px">
+          <img class="featurette-image img-fluid" src="assets/img/Basketball.jpg" alt="">
   
         </div>
       </div>
@@ -167,16 +161,16 @@
           <p class="lead">In meiner Freizeit bin ich sehr viel mit meinen Kollegen. Ich liebe es auf Partys zu gehen und dort Spass mit all meinen Kollegen und Kolleginen zu haben. Auch unter der Woche bin ich sehr viel mit ihnen.</p>
         </div>
         <div class="col-md-5">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/img/Freunde.png" alt="" width="500px" height="500px">
+          <img class="featurette-image img-fluid" src="assets/img/Freunde.png" alt="">
   
         </div>
       </div>
   
       <hr class="featurette-divider">
   
-      <!-- /END THE FEATURETTES -->
   
-    </div><!-- /.container -->
+  
+    </div>
 
   
 
@@ -186,8 +180,8 @@
         <p class="col-md-4 mb-0 text-muted">&copy; Luca & Heidi</p>
     
         <!-- Logo -->
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="assets/img/LOGO.png" width="50px" height="50px" alt="">
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img class="logo" src="assets/img/LOGO.png" width="50px" height="50px" alt="">
         </a>
     
         <ul class="nav col-md-4 justify-content-end">

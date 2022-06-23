@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg container">
           <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand" href="#"><img src="assets/img/LOGO.svg" alt="" width="50px" height="50px"> Luca & Heidi</a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/LOGO.svg" alt="" width="50px" height="50px"> Luca & Heidi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <!-- Menü Icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Über uns
                   </a>
-                  <!-- Dropdown -->
+                  <!--Bootstrap-Komponent Dropdown -->
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="luca.html">Luca Züger</a></li>
                     <li><a class="dropdown-item" href="heidi.html">Heidi Chu</a></li>
@@ -54,11 +54,16 @@
 
   
 
-    <!-- Cover  -->
+    <!-- Main  -->
     <main class="px-3 text-center">
-      <img src="assets/img/LucaundHeidi.jpg" alt="Luca & Heidi">
+      <!-- Bootstrap-Komponent Embed -->
+      <div class="embed-responsive embed-responsive-16by9" >
+        <iframe class="embed-responsive-item w-100" height="500px" src="assets/img/Heidi&Luca.mp4" allowfullscreen></iframe>
+      </div>
       <h1>Wilkommen auf unsere Webseite :)!</h1>
       <p class="lead">Im Modul 278 müssen wir eine eigene Webseite erstellen und gestalten. Du befindest dich gerade auf unsere. Wir sind zwei Mediamatiker im ersten Lehrjahr und haben noch weitere drei Jahre vor uns. Wir kennen uns von der Berufsschule und sind seitdem gut befreundet. Wenn du mehr von uns erfahren möchtest, klicke auf den Button :) Ah und Grüezi Herr Garivaldi.  </p>
+      
+      <!-- Bootstrap-Komponent Button-->
       <button type="button" class="btn btn-outline-dark btn-lg"><a href="luca.html">Luca</a></button>
       <button type="button" class="btn btn-outline-dark btn-lg"><a href="heidi.html">Heidi</a></button>
     </main>
@@ -70,8 +75,8 @@
         <p class="col-md-4 mb-0 text-muted">&copy; Luca & Heidi</p>
     
         <!-- Logo -->
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="assets/img/LOGO.png" width="50px" height="50px" alt="">
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img class="logo" src="assets/img/LOGO.png" width="50px" height="50px" alt="">
         </a>
     
         <ul class="nav col-md-4 justify-content-end">

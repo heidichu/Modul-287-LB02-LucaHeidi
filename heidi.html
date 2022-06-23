@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg container">
           <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand" href="#"><img src="assets/img/LOGO.svg" alt="" width="50px" height="50px"> Luca & Heidi</a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/LOGO.svg" alt="" width="50px" height="50px"> Luca & Heidi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <!-- Menü Icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Über uns
                   </a>
-                  <!-- Dropdown -->
+                  <!--Bootstrap Komponent, Dropdown -->
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="luca.html">Luca Züger</a></li>
                     <li><a class="dropdown-item" href="heidi.html">Heidi Chu</a></li>
@@ -55,17 +55,18 @@
   <main>
 
     <!-- Main -->
+    <!-- Bootstrap-Komponent,Bildergallerie Carousel  -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="bd-placeholder-img" width="100%" height="100%" src="assets/img/portfolio01.jpg" alt="">
+          <img class="d-block w-100 h-100" src="assets/img/portfolio01.jpg" alt="">
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Chinagarten</h1>
@@ -73,7 +74,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="100%" src="assets/img/portfolio02.jpg" alt="">
+          <img class="d-block w-100 h-100" src="assets/img/portfolio02.jpg" alt="">
   
           <div class="container">
             <div class="carousel-caption">
@@ -82,7 +83,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="100%" src="assets/img/portfolio03.jpg" alt="">
+          <img class="d-block w-100 h-100" src="assets/img/portfolio03.jpg" alt="">
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>Asianfoodfestival</h1>
@@ -90,7 +91,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="100%" src="assets/img/portfolio04.jpg" alt="">
+          <img class="d-block w-100 h-100" src="assets/img/portfolio04.jpg" alt="">
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Circle</h1>
@@ -98,7 +99,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="100%" src="assets/img/portfolio05.jpg" alt="">
+          <img class="d-block w-100 h-100" src="assets/img/portfolio05.jpg" alt="">
   
           <div class="container">
             <div class="carousel-caption">
@@ -117,38 +118,36 @@
       </button>
     </div>
   
+    <!-- Bilder -->
     <div class="container marketing">
-  
-      <!-- Three columns of text below the carousel -->
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Musik<span class="text-muted">Konzerte</span></h2>
+        <p class="lead">Ich liebe es auf Konzerte zu gehen, dass waren alle Konzerte die ich bisher im Jahr 2022 war. </p>
+      </div>
       <div class="row">
         <div class="col-lg-4">
          <img class="bd-placeholder-img rounded" width="140" height="140" src="assets/img/konzert01.JPG" alt="">
-  
           <h2 class="fw-normal">Cro</h2>
           <p>Zürich, Halle 622</p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded" width="140" height="140" src="assets/img/konzert02.JPG" alt="">
-  
           <h2 class="fw-normal">Dua Lipa</h2>
           <p>Zürich, Hallenstadion</p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded" width="140" height="140" src="assets/img/konzert03.JPG" alt="">
-  
           <h2 class="fw-normal">Boloboys 2020</h2>
           <p>Zürich, Komplex</p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded" width="140" height="140" src="assets/img/konzert04.JPG" alt="">
-   
            <h2 class="fw-normal">Olivia Rodrigo</h2>
            <p>Zürich, Halle 622</p>
-      </div><!-- /.row -->
+      </div>
   
   
-    <!-- Text  -->
-  
+      <!-- Media object -->
       <hr class="featurette-divider">
   
       <div class="row featurette">
@@ -157,7 +156,7 @@
           <p class="lead">Ich habe 2021 meine Lehre als Mediamatikerin bei der Firma Sunrise UPC gestartet.  </p>
         </div>
         <div class="col-md-5">
-          <img class="rounded bd-placeholder-img-lg featurette-image img-fluid" src="assets/img/Kamera.JPG" alt="" width="500" height="500">
+          <img class="featurette-image img-fluid" src="assets/img/Kamera.JPG" alt="">
   
         </div>
       </div>
@@ -170,7 +169,7 @@
           <p class="lead">Neben dem fotografieren und filmen, spiele ich in meiner Freizeit Klavier.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img class="rounded bd-placeholder-img-lg featurette-image img-fluid" src="assets/img/Klavier.jpg" alt="" width="500" height="500">
+          <img class="featurette-image img-fluid" src="assets/img/Klavier.jpg">
   
         </div>
       </div>
@@ -183,16 +182,16 @@
           <p class="lead">Ich verbringe meine Freizeit am liebsten mit meinen Freunden.</p>
         </div>
         <div class="col-md-5">
-          <img class="brounded bd-placeholder-img-lg featurette-image img-fluid" src="assets/img/SilvanaundHeidi.JPEG" alt="" width="500" height="500">
+          <img class="featurette-image img-fluid" src="assets/img/SilvanaundHeidi.JPEG" alt="">
   
         </div>
       </div>
   
       <hr class="featurette-divider">
   
-      <!-- /END THE FEATURETTES -->
+
   
-    </div><!-- /.container -->
+    </div>
 
   
 
@@ -202,8 +201,8 @@
         <p class="col-md-4 mb-0 text-muted">&copy; Luca & Heidi</p>
     
         <!-- Logo -->
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="assets/img/LOGO.png" width="50px" height="50px" alt="">
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img class="logo" src="assets/img/LOGO.png" width="50px" height="50px" alt="">
         </a>
     
         <ul class="nav col-md-4 justify-content-end">
